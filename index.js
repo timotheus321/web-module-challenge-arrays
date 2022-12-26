@@ -46,8 +46,13 @@ Use the copy function below to do the following:
 */
 
 
-function copy(/*your code here*/){
-  /*your code here*/
+function copy(originalFlavors){
+  const copiedoriginalFlavors = [];
+  for (let i = 0; i < originalFlavors.length; i++){
+    copiedoriginalFlavors.push(originalFlavors[i]);
+  }
+  return copiedoriginalFlavors;
+
 }
 
 
@@ -63,8 +68,12 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
-  /*your code here*/
+function is31Flavors(originalFlavors){
+  if(originalFlavors.length === 31){
+    return true;
+  }else{
+    return false;
+  }
  }
 
 
@@ -82,8 +91,9 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-  /*your code here*/
+function addFlavor(originalFlavors, RainbowSherbert){
+  originalFlavors.unshift("Rainbow Sherbert");
+  return originalFlavors;
  }
 
 
@@ -100,8 +110,9 @@ Use the removeLastFlavor function below to do the following:
 */
 
 
-function removeLastFlavor(/*your code here*/){
- /*your code here*/
+function removeLastFlavor(originalFlavors){
+ originalFlavors.pop();
+ return originalFlavors;
 }
 
 
@@ -118,8 +129,8 @@ Use the getFlavorByIndex function below to do the following:
 */
 
 
-function getFlavorByIndex(/*your code here*/){
-  /*your code here*/
+function getFlavorByIndex(originalFlavors, index){
+  return originalFlavors[index];
 }
 
 
@@ -138,8 +149,8 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(originalFlavors, rockyRoad){
+  originalFlavors.splice()
 }
 
 
